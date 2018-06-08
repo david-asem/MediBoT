@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>MediBot</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+ 
+  <link rel="stylesheet" href="css/front.css">
+
+ 
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar transparent navbar-inverse">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="index.html"><img src="res/iconmonstr-medical-9-240(1).png " width="40" height="35" alt=icon"" ></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- First Container -->
+<div class="container-fluid bg-1 text-center">
+  
+ <div class="col-md-3 col-md-offset-3 "> <img src="res/iphone1.png" class="img-responsive" id = 'mockupPhone' alt="phone mockup"> </div>
+ <div class="col-md-4 col-md-offset-0" id="mockupText">
+   <img src="res/doctor1.png"id='bot-image' alt="doctor">
+   <h1>MediBot</h1>
+    <h4>We combine natural processing and AI to bring you efficient diagnosis based on your symptoms. We also help you understand the drugs you buy.</h4>
+        <input type="button" class="btn btn-default" id="mockupbutton" value="Subscribe"  href="#signup" data-toggle="modal" data-target=".bs-modal-sm">
+</div> 
+ 
+</div>
+
+<!-- Modal -->
+<div class="modal fade bs-modal-sm" id="myModal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+          <br>
+          <div class="modal-header blue-gradient">
+          </div>
+        <div class="modal-body">
+          <div id="myTabContent" class="tab-content">
+          <div class="tab-pane fade active in" id="signin">
+              <form class="form-horizontal" id="form-submit" method="POST">
+              <fieldset>
+              <!-- Text input-->
+              <div class="control-group">
+                <label class="control-label" for="username">Full Name:</label>
+                <div class="controls">
+                  <input required id="username" name="username" type="text" class="form-control" placeholder="John Doe" class="input-medium" required="">
+                </div>
+              </div>
+  
+              <!-- Number input-->
+              <div class="control-group">
+                <label class="control-label" for="numberinput">MTN Phone Number</label>
+                <div class="controls">
+                  <input required id="numberinput" name="numberinput" class="form-control" type="number" placeholder="0241234567" class="input-medium" size=10 >
+                </div>
+              </div>
+               <!-- email input-->
+               <div class="control-group">
+                  <label class="control-label" for="emialid">Email:</label>
+                  <div class="controls">
+                    <input required id="emailid" name="emailid" type="email" class="form-control" placeholder="example@eg.com" class="input-medium" required>
+                  </div>
+                </div>
+
+               <!-- Button -->
+              <div class="control-group" id="btnSubmit">
+                <label class="control-label" for="signin"></label>
+                <div class="controls">
+                  <button  name="signin" onclick="sendForm()" class="btn btn-default" id="sub-modal-button">Subscribe</button>
+                </div>
+              </div>
+              </fieldset>
+              </form>
+          </div>
+      </div>
+        </div>
+        <div class="modal-footer">
+        <center>
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </center>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/payment.js"></script>
+</body>
+
+</html>
