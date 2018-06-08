@@ -1,2 +1,2 @@
 # MediBoT
-This repository contains a project on a virtual health assistant
+A virtual health assistant powered by artificial intelligence and integrated with informedica API
