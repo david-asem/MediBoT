@@ -1,2 +1,2 @@
 # MediBoT
-A virtual health assistant powered by artificial intelligence and integrated with informedica API
+A virtual medical assistant powered by artificial intelligence and  informedica API
